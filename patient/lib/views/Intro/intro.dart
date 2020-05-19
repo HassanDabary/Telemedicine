@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:patient/views/Login/login.dart';
 import 'package:patient/views/Splash/Splash.dart';
 import 'Widget/TextTitle.dart';
 import 'Widget/Pages.dart';
@@ -79,7 +80,7 @@ class _IntroState extends State<Intro> with SingleTickerProviderStateMixin {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) => Splash()));
+                              builder: (BuildContext context) => Login()));
                     setState(() {
                       _currentTitle = _controller.page.floor();
                     });
